@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --dark: #141414;
+    --offwhite: rgb(169, 169, 169);
+    --white: #ffffff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url(./images/netflix.jpg);
+    color: white;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    padding: 50px;
+    height: 500px;
+    max-width: 350px;
+    background: #000000d6;
+    border-radius: 5px;
+}
+
+.id-pass {
+    margin-top: 15px;
+    width: 250px;
+    padding: 13px;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    border-radius: 3px;
+}
+
+button.sing-in {
+    margin-top: 35px;
+    width: 250px;
+    padding: 13px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.boxhelp {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+#rem-me {
+    color: rgb(169, 169, 169);
+}
+
+.needhelp {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.needhelp:hover,.sign-up:hover
+{
+text-decoration: underline;
+}
+
+.text1{
+    margin: 15px 0px;
+}
+
+.text11 {
+    color: var(--offwhite);
+}
+
+.sign-up {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.context1{
+    font-size: 13px;
+}
+
+.learnmore{
+    text-decoration: none;
+    color: #4f4ffd;
+}
