@@ -4,6 +4,7 @@
     --dark: #141414;
     --offwhite: rgb(169, 169, 169);
     --white: #ffffff;
+    --font: #b3b3b3;
 
 }
 
@@ -18,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: sans-serif;
     background-image: url(./images/netflix.jpg);
     color: white;
     letter-spacing: 0.2px;
@@ -33,6 +34,7 @@ body {
 }
 
 .id-pass {
+    color: var(--white);
     margin-top: 15px;
     width: 250px;
     padding: 13px;
@@ -41,7 +43,17 @@ body {
     border-radius: 3px;
 }
 
-button.sing-in {
+.id-pass:focus {
+    background: rgb(80, 80, 80);
+    border: 0px solid #1670BE;
+    box-shadow: 0 0 0px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+    border-bottom: 2px solid #e87c03;
+
+}
+
+button.sign-in {
     margin-top: 35px;
     width: 250px;
     padding: 13px;
@@ -49,6 +61,10 @@ button.sing-in {
     color: white;
     border: none;
     border-radius: 3px;
+}
+
+button.sign-in:hover {
+    cursor: pointer;
 }
 
 .boxhelp {
@@ -59,26 +75,28 @@ button.sing-in {
 }
 
 #rem-me {
-    color: rgb(169, 169, 169);
+    color: var(--font);
+    font-size: 13px;
+    font-weight: 400;
+
 }
 
+
 .needhelp {
-    margin-left: 100px;
-    color: white;
+    margin-left: 80px;
+    color: var(--font);
+    font-size: 13px;
+    font-weight: 400;
     text-decoration: none;
 }
 
-.needhelp:hover,.sign-up:hover
-{
-text-decoration: underline;
-}
 
-.text1{
+.text1 {
     margin: 15px 0px;
 }
 
 .text11 {
-    color: var(--offwhite);
+    color: #8c8c8c;
 }
 
 .sign-up {
@@ -86,11 +104,22 @@ text-decoration: underline;
     text-decoration: none;
 }
 
-.context1{
+
+.context1 {
     font-size: 13px;
 }
 
-.learnmore{
+.context11 {
+    color: #8c8c8c;
+}
+
+.learnmore {
     text-decoration: none;
     color: #4f4ffd;
+}
+
+.needhelp:hover,
+.sign-up:hover,
+.learnmore:hover {
+    text-decoration: underline;
 }
